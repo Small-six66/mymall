@@ -8,9 +8,22 @@ export function getCarData(){
 
 export function getCarProData(){
   return request({
-    url:'/car/prodata',
-    // params: {   //传递参数
+    url:'/car/prodata'
+  })
+}
 
+export function getCarGuessData(){
+  return request({
+    url:'/car/guessdata',
+    // params: {   //传递参数
+    //   page
     // }
   })
 }
+
+export function getCarDetailData(){
+  return request({
+    url:'/car/detaildata'
+  })
+}
+
