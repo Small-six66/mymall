@@ -46,7 +46,7 @@ export default {
     getCarDetailData().then(res =>{
       this.imgdata = res.topimage
       this.decdata = res.detail
-      console.log(res);
+      console.log(this.decdata);
     })
   }
 }

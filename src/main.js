@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-// 判断是否为mock模式
+
+
+// 引入mock
 require('./mock/index.js')
 
 

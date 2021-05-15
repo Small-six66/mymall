@@ -15,11 +15,9 @@ export default {
   props: {
     mydecdata: {
       type: Object,
-      default: {
-        title: '',
-        titledec:'',
-        money:''
-      }
+      default(){
+        return {}
+      } 
     }
   },
   filters: {
