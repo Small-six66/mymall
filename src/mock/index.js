@@ -4,6 +4,7 @@ require('./car/proData')
 require('./car/guessData')
 require('./car/detailData')
 require('./chang/optData')
+require('./commi/recomData')
 
 
 // 设置所有ajax请求的超时时间，模拟网络传输耗时

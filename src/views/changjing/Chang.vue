@@ -39,6 +39,7 @@ export default {
       this.recomList = res.optdata[0];
       this.popList = res.optdata[1];
       this.smallList = res.optdata[2];
+      console.log(this.currentType);
     })
   },
   methods: {

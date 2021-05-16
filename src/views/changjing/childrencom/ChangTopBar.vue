@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import NavBar from '../../../components/common/navbar/NavBar.vue'
-import SearchBox2 from '../../../components/smallpart/SearchBox2.vue'
+import NavBar from 'components/common/navbar/NavBar.vue'
+import SearchBox2 from 'components/smallpart/SearchBox2.vue'
 export default {
   name: "ChangTopBar",
   components: {
