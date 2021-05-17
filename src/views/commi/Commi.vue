@@ -2,7 +2,7 @@
   <div>
     <top-title top-title="社区"/>
     <com-top-bar/>
-    <com-goods :datalist="recomData.datalist"/>
+    <com-goods :datalist="currentType.datalist"/>
   </div>
 </template>
 
@@ -24,14 +24,28 @@ export default {
     return {
       recomData: {},
       pointData: {},
-      vlogData: {}
+      vlogData: {},
+      currentType:{},
     }
   },
   created () {
     getComalldata().then(res => {
+      this.currentType = res.data[0]
       this.recomData = res.data[0];
       this.pointData = res.data[1];
       this.vlogData = res.data[2];
+    })
+    this.$bus.$on('dataChange',(index) => {
+      switch(index){
+        case 0:
+          this.currentType = this.recomData
+          break
+        case 1:
+          this.currentType = this.pointData
+          break
+        case 2:
+          this.currentType = this.vlogData
+      }
     })
   },
 };

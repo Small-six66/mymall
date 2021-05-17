@@ -31,6 +31,7 @@ export default {
     intemClick(index) {
       this.currentIndex = index
       this.$emit('tabClick',index)
+      this.$bus.$emit('dataChange',index)
     }
   },
 }

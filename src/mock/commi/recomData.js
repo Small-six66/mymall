@@ -17,7 +17,7 @@ Mock.mock('/commi/recomdata', "get",  {
       }],
    },{
     "category": "point", 
-    "datalist|14": [{
+    "datalist|10": [{
         "image": Random.image('150x160','#eb5b5b','#FFF','HaHa'),
         "userimg": Random.image('30x30','#c0586b','#FFF','U'),
         "text":"@word(8,15)",
@@ -29,6 +29,7 @@ Mock.mock('/commi/recomdata', "get",  {
       "category": "vlog", 
       "datalist|14": [{
           "image": Random.image('150x160','#f18238','#FFF','VOLG'),
+          "userimg": Random.image('30x30','#c0586b','#FFF','U'),
           "text":"@word(8,15)",
           "name":"@ctitle(3, 4)",
           "address":"@ctitle(5, 8)",

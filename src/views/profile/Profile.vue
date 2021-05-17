@@ -3,8 +3,21 @@
 </template>
 
 <script>
+
+import { getProdata } from 'network/profile.js'
+
 export default {
   name: "Profile",
+  data() {
+    return {
+      mydata: {}
+    }
+  },
+  created () {
+    getProdata().then( res => {
+      this.mydata = res.data
+    })
+  },
 };
 </script>
 
