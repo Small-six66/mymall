@@ -6,8 +6,9 @@ const mycolor = ['#eb3939','#c0586b','#f18ea0','#c56b9b','#eb5b5b','#e9a7a7','#f
 Mock.mock('/profile/prodata', "get",  {
   "code" :  200 ,
   "data": {
-    "username": "@ctitle(3, 4)",
-    "text": "@ctitle(8, 10)",
+    "username": "@word(5,6)",
+    "image":Random.image('100x100','#c0586b','#FFF','ME'),
+    "text": "@word(10,12)",
     "point": "@natural(0,500)",
     "fans": "@natural(0,500)",
    },
