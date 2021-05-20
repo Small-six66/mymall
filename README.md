@@ -1,3 +1,5 @@
+
+
 # mymall
 
 ## Project setup
@@ -15,5 +17,14 @@ npm run serve
 npm run build
 ```
 
+### 页面效果展示
+
+![](D:/typora 图/mymall.jpg)
+
+
+
+![](README.assets/mymall-详情页.jpg)
+
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
